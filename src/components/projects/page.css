@@ -1,0 +1,23 @@
+.projectMain{
+    width: 97vw;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projectMainTile{
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    color: var(--main-color);
+    width: 85vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+.projectMainCarousel{
+    width: 85vw;
+    box-shadow: 5px 5px 5px rgb(171, 170, 170), -5px -5px 5px rgb(233, 232, 232);
+
+}

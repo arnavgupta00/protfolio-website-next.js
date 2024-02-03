@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&family=Oswald:wght@700&family=Poppins:wght@700&family=Roboto&family=Satisfy&family=Syne:wght@500&family=Tektur:wght@400;800&display=swap');
+
+:root{
+    --main-color:#25addec7;
+}
+.navbar{
+    width: 97vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 75px;
+}
+
+.navbarLeftBox{
+    width: 50%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+    
+
+}
+.navbarLeftBox h1{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 24px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    color: transparent;
+    text-shadow: 0 0 1px var(--main-color);
+    cursor: pointer;
+}
+.navbarRightBox{
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.button {
+    background: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+    
+}
+
+.button:hover {
+
+    box-shadow: 5px 5px 5px rgb(171, 170, 170), -5px -5px 5px rgb(233, 232, 232);
+}

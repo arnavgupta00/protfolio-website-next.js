@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&family=Oswald:wght@700&family=Poppins:wght@700&family=Roboto&family=Satisfy&family=Syne:wght@500&family=Tektur:wght@400;800&display=swap");
+
+:root {
+  --main-color: #209fcdc7;
+}
+
+.firstPage {
+  width: 97vw;
+  height: 700px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.fpLeftBlock {
+  width: 50%;
+
+  height: 550px;
+}
+
+.fpageMainTextBlock {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+}
+.fpageMainTextBlock h1 {
+  font-size: 100px;
+  font-family: "Poppins", sans-serif;
+  color: var(--main-color);
+}
+.fpageMainTextBlock h2 {
+  font-size: 45px;
+  font-family: "Poppins", sans-serif;
+  color: var(--main-color);
+}
+.resumeLink {
+  width: 35%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.resumeLinkButton {
+  background: rgb(214, 212, 212);
+  color: var(--main-color);
+  width: 200px;
+  height: 50px;
+  padding: 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(171, 170, 170), -5px -5px 5px rgb(233, 232, 232);
+}
+.fpRightBlock {
+  width: 40%;
+  height: 500px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.imageBlock {
+  background: url("https://i.imgur.com/xNtDKZq.jpg");
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  border: 2px solid var(--main-color);
+  box-shadow: 9px 9px 5px rgb(171, 170, 170), -9px -9px 5px rgb(233, 232, 232);
+
+}
