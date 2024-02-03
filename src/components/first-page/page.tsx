@@ -9,7 +9,7 @@ export default function FirstPage() {
             <h1>Hello </h1>
             <h2>I am Arnav</h2>
             <div className="resumeLink">
-                <button className="resumeLinkButton">Resume</button>
+                <button className="resumeLinkButton" onClick={() => window.open("https://drive.google.com/file/d/1-abyMw05t0s1E4za9hM9CfHU4_trz8iy/view?usp=sharing", "_blank")}>Resume</button>
             </div>
             
           </div>
