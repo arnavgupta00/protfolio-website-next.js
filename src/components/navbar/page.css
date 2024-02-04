@@ -1,7 +1,5 @@
 
-:root{
-    --main-color:#25addec7;
-}
+
 .navbar{
     width: 97vw;
     display: flex;
@@ -42,8 +40,8 @@
 }
 
 .button {
-    background: var(--main-color);
-    color: white;
+    background: transparent;
+    color: var(--main-color);
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
@@ -54,6 +52,7 @@
 }
 
 .button:hover {
-
+    color: white;
+    background: var(--main-color);
     box-shadow: 5px 5px 5px rgb(171, 170, 170), -5px -5px 5px rgb(233, 232, 232);
 }

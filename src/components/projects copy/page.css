@@ -7,8 +7,8 @@
     align-items: center;
 }
 .projectMainTile{
-    font-size: 155px;
-    font-family: "Biotif Mid", sans-serif;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
     color: var(--main-color);
     width: 90vw;
     display: flex;
