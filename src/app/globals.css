@@ -1,14 +1,17 @@
 html{
   background-color: rgb(224,224,224);
+  overflow-x: hidden;
 }
 :root {
   --main-color: #09252ec7;
+  --main-color-light: #09252e3d;
 }
 
 *{
   margin: 0%;
   padding: 0%;
   cursor: default;
+  
 }
 
 @font-face {

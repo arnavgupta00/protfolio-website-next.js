@@ -1,20 +1,36 @@
 .projectMain{
     width: 97vw;
-    height: 900px;
+    height: 1900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .projectMainTile{
-    font-size: 155px;
+    font-size: 8rem; 
     font-family: "Biotif Mid", sans-serif;
     color: var(--main-color);
-    width: 90vw;
+    width: 150px;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
 
+}
+.projectMainGrid{
+    width: 90%;
+    height: 700px;
+    border-radius: "30px";
+}
+.projectMainGridObject{
+    background-color: var(--main-color-light);
+    border-radius: "30px";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.projectMainGridObject h1 {
+    color: var(--main-color);
 }
 .projectMainCarousel{
     width: 90vw;

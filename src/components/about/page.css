@@ -1,0 +1,94 @@
+.aboutMain {
+  width: 97vw;
+  height: 500px;
+}
+
+
+.aboutMainTile {
+  margin-top: -300px;
+  font-size: 7rem;
+  font-family: "Biotif Mid", sans-serif;
+  color: var(--main-color);
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+
+
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  
+  
+  
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: var(--main-color-light);
+  /* -webkit-box-shadow: 5px 5px 10px var(--main-color), -5px -5px 10px var(--main-color);
+  box-shadow: 5px 5px 10px var(--main-color), -5px -5px 10px var(--main-color); */
+  border-radius: 5px;
+  color: var(--main-color);
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+.timeline-content h3{
+    font-size: 1.5rem;
+    font-family: "Biotif Mid", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #f27121, #e94057, #8a2387);
+    width: 3px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #f27121, #e94057, #8a2387);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}

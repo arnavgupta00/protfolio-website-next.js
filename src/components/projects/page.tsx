@@ -1,13 +1,18 @@
 "use client";
 import { Carousel } from "@/components/carousel/carousel";
 import { useState, useRef, useEffect } from "react";
+import { projectRefAdd } from "@/components/refManagements";
 
 import "@/components/projects/page.css";
 
 export default function Projects() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [hoveredGridItem, setHoveredGridItem] = useState(null);
+
+  const projectRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    projectRefAdd(projectRef);
     const handleScroll = () => {
       const position = window.pageYOffset;
       const maxScroll =
@@ -24,14 +29,162 @@ export default function Projects() {
     };
   }, []);
 
+  const handleGridItemHover = (index: any) => {
+    setHoveredGridItem(index);
+  };
+
   return (
-    <div>
-      <div className="projectMainTile" style={{width:"200vw" , marginTop:"400px"}}>
-          <h1 style={{ marginLeft:`${(70-scrollPosition/0.8)}%` , opacity:0.3}}>My Work</h1>
-        </div>
+    <div ref={projectRef}>
       <div className="projectMain">
-       
-        <div className="projectMainCarousel"></div>
+        <div
+          className="projectMainTile"
+          style={{
+            width: "200vw",
+            marginTop: "0",
+          }}
+        >
+          <h1
+            style={{
+              marginLeft: `${70 - scrollPosition / 1.5}%`,
+              // opacity: 0.3,
+            }}
+          >
+            My Work
+          </h1>
+        </div>
+        <div
+          className="projectMainGrid"
+          onMouseLeave={() => handleGridItemHover(null)}
+          style={{
+            display: "grid",
+            gridTemplateColumns:
+              hoveredGridItem === 0
+                ? "90% 10%"
+                : hoveredGridItem === 1
+                ? "10% 90%"
+                : hoveredGridItem === 2
+                ? "90% 10%"
+                : hoveredGridItem === 3
+                ? "10% 90%"
+                : "75% 25%",
+            gridTemplateRows:
+              hoveredGridItem === 0
+                ? "90% 10%"
+                : hoveredGridItem === 1
+                ? "90% 10%"
+                : hoveredGridItem === 2
+                ? "10% 90%"
+                : hoveredGridItem === 3
+                ? "10% 90% "
+                : "60% 40%",
+            gap: "25px 25px",
+          }}
+        >
+          <div
+            className="projectMainGridObject"
+            style={{ borderRadius: "25px" }}
+            onMouseEnter={() => handleGridItemHover(0)}
+          >
+            <h1
+              onClick={() => {
+                window.open(
+                  "https://github.com/arnavgupta00/VideoConferencingApp-NextJS",
+                  "_blank"
+                );
+              }}
+              style={{
+                fontSize:
+                  hoveredGridItem === 0
+                    ? "3.5rem"
+                    : hoveredGridItem === null
+                    ? "1.5rem"
+                    : "0.5rem",
+                fontFamily: "Biotif Mid, sans-serif",
+                cursor: "pointer",
+              }}
+            >
+              Video Conference Platform
+            </h1>
+          </div>
+          <div
+            className="projectMainGridObject"
+            style={{ borderRadius: "25px" }}
+            onMouseEnter={() => handleGridItemHover(1)}
+          >
+            <h1
+              onClick={() => {
+                window.open(
+                  "https://github.com/arnavgupta00/FileSharingWebRTC",
+                  "_blank"
+                );
+              }}
+              style={{
+                fontSize:
+                  hoveredGridItem === 1
+                    ? "3.5rem"
+                    : hoveredGridItem === null
+                    ? "1.5rem"
+                    : "0.5rem",
+                fontFamily: "Biotif Mid, sans-serif",
+                cursor: "pointer",
+              }}
+            >
+              File Sharing System
+            </h1>
+          </div>
+          <div
+            className="projectMainGridObject"
+            style={{ borderRadius: "25px" }}
+            onMouseEnter={() => handleGridItemHover(2)}
+          >
+            <h1
+              onClick={() => {
+                window.open(
+                  "https://github.com/arnavgupta00/eccomerce-website",
+                  "_blank"
+                );
+              }}
+              style={{
+                fontSize:
+                  hoveredGridItem === 2
+                    ? "3.5rem"
+                    : hoveredGridItem === null
+                    ? "1.5rem"
+                    : "0.5rem",
+                fontFamily: "Biotif Mid, sans-serif",
+                cursor: "pointer",
+              }}
+            >
+              Ecommerce
+            </h1>
+          </div>
+          <div
+            className="projectMainGridObject"
+            style={{ borderRadius: "25px" }}
+            onMouseEnter={() => handleGridItemHover(3)}
+          >
+            <h1
+              onClick={() => {
+                window.open(
+                  "https://github.com/arnavgupta00/gemini_bot_discord",
+                  "_blank"
+                );
+              }}
+              style={{
+                fontSize:
+                  hoveredGridItem === 3
+                    ? "3.5rem"
+                    : hoveredGridItem === null
+                    ? "1.5rem"
+                    : "0.5rem",
+                fontFamily: "Biotif Mid, sans-serif",
+                cursor: "pointer",
+              }}
+            >
+              Gemini Discord Bot
+            </h1>
+          </div>
+        </div>
       </div>
     </div>
   );

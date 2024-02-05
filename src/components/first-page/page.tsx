@@ -4,18 +4,7 @@ export default function FirstPage() {
   return (
     <div>
       <div className="firstPage">
-        <div className="fpageMainTextBlockTagline" style={{position:"absolute", zIndex:"-1"}}>
-          <div className="fpageMainTextBlockh1" >
-            <h1>Building Digital Dreams that,</h1>
-          </div>
-
-          <div
-            className="fpageMainTextBlockh1"
-            style={{ marginBottom: "50px" }}
-          >
-            <h1>Spark Creativity.</h1>
-          </div>
-        </div>
+        
 
         <div className="fpLeftBlock">
           <div className="fpageMainTextBlock">
@@ -38,6 +27,15 @@ export default function FirstPage() {
               </button>
             </div>
           </div>
+        </div>
+        <div className="fpageMainTextBlockTagline" style={{zIndex:"-1"}}>
+          <div className="fpageMainTextBlockh1">
+            {"Building Digital Dreams that, Spark Creativity.".split(" ").map((word, index) => (
+              <h1 key={index}>{word}</h1>
+            ))}
+          </div>
+
+        
         </div>
         <div className="fpRightBlock">
           <div className="imageBlock"></div>
