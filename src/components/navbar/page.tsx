@@ -26,8 +26,8 @@ export default function Navbar() {
                 <div className="navbarRightBox">
                     <button className="button" onClick={scrollToProjects}>Projects</button>
                     <button className="button" onClick={scrollToAbout}>About</button>
-                    <button className="button">Contact</button>
-                    <button className="button">GitHub</button>
+                    <button className="button" onClick={()=>window.open("https://www.instagram.com/arnav_gupta3035/?hl=en", "_blank")}>Contact</button>
+                    <button className="button" onClick={()=>window.open("https://github.com/arnavgupta00", "_blank")}>GitHub</button>
                 </div>
             </div>
         </div>
