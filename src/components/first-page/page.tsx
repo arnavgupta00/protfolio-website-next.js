@@ -1,8 +1,9 @@
 import "@/components/first-page/page.css";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function FirstPage() {
 
-  const isMobileOrTablet = window.matchMedia("(max-width: 768px)").matches;
+  const isMobileOrTablet = useMediaQuery("(max-width: 767px)");
   return (
     <div>
       {isMobileOrTablet ? (
