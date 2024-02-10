@@ -38,7 +38,7 @@ export default function FirstPage() {
               <h1 style={{fontSize:"5rem"}} key={index}>{word} </h1>
             ))}
           </div>
-
+              
         
         </div>
       

@@ -10,7 +10,7 @@
     font-size: 8rem; 
     font-family: "Biotif Mid", sans-serif;
     color: var(--main-color);
-    width: 150px;
+    width: 150vw;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -37,4 +37,47 @@
     box-shadow: 5px 5px 5px rgb(171, 170, 170), -5px -5px 5px rgb(233, 232, 232);
     border-radius: 10px;
 
+}
+
+@media screen and (max-width:768px) {
+    .projectMain{
+        width: 97vw;
+        height: 110vh;
+    }
+    .projectMainTile{
+        font-size:2rem; 
+        font-family: "Biotif Mid", sans-serif;
+        color: var(--main-color);
+        width: 550px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    
+    }
+
+    .projectMainGrid{
+        width: 80%;
+        height: 500px;
+        border-radius: "30px";
+        margin-top: 50px;
+    }
+    .projectMainGridObject{
+        background-color: var(--main-color-light);
+        border-radius: "30px";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.5rem;
+        
+    }
+    .projectMainGridObject h1 {
+        color: var(--main-color);
+
+    }
+    .projectMainCarousel{
+        width: 90vw;
+        box-shadow: 5px 5px 5px rgb(171, 170, 170), -5px -5px 5px rgb(233, 232, 232);
+        border-radius: 10px;
+    
+    }
 }

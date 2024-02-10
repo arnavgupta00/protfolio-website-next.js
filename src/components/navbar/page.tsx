@@ -17,12 +17,10 @@ export default function Navbar() {
   };
 
   return (
-    <div>
+    <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
       {isMobileOrTablet ? (
-        <div className="navbar" style={{width:"105vw"}}>
-        <div className="navbarLeftBox" style={{visibility:"hidden"}}>
-          <h1>Arnav Gupta</h1>
-        </div>
+        <div className="navbar">
+       
         <div className="navbarRightBox">
           <button className="button" onClick={scrollToProjects}>
             Projects

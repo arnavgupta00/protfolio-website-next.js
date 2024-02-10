@@ -2,10 +2,15 @@
 import { Carousel } from "@/components/carousel/carousel";
 import { useState, useRef, useEffect } from "react";
 import { projectRefAdd } from "@/components/refManagements";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 
 import "@/components/projects/page.css";
 
 export default function Projects() {
+
+  const isMobileOrTablet = useMediaQuery("(max-width: 767px)");
+
   const [scrollPosition, setScrollPosition] = useState(0);
   const [hoveredGridItem, setHoveredGridItem] = useState(null);
 
@@ -38,14 +43,11 @@ export default function Projects() {
       <div className="projectMain">
         <div
           className="projectMainTile"
-          style={{
-            width: "200vw",
-            marginTop: "0",
-          }}
+          
         >
           <h1
             style={{
-              marginLeft: `${70 - scrollPosition / 1.5}%`,
+              marginLeft: !isMobileOrTablet ?`${70 - scrollPosition / 1.5}%` : `${50 - scrollPosition / 1.5}%`,
               // opacity: 0.3,
             }}
           >
@@ -93,14 +95,21 @@ export default function Projects() {
                 );
               }}
               style={{
-                fontSize:
+                fontSize: isMobileOrTablet ? (hoveredGridItem === 0
+                  ? "1.5rem"
+                  : hoveredGridItem === null
+                  ? "1rem"
+                  : "0.2rem"
+                ) : (
                   hoveredGridItem === 0
                     ? "3.5rem"
                     : hoveredGridItem === null
                     ? "1.5rem"
-                    : "0.5rem",
+                    : "0.5rem"
+                ),
                 fontFamily: "Biotif Mid, sans-serif",
                 cursor: "pointer",
+                textAlign: "center",
               }}
             >
               Video Conference Platform
@@ -119,14 +128,21 @@ export default function Projects() {
                 );
               }}
               style={{
-                fontSize:
+                fontSize: isMobileOrTablet ? (hoveredGridItem ===1
+                  ? "1.5rem"
+                  : hoveredGridItem === null
+                  ? "1rem"
+                  : "0.2rem"
+                ) : (
                   hoveredGridItem === 1
                     ? "3.5rem"
                     : hoveredGridItem === null
                     ? "1.5rem"
-                    : "0.5rem",
+                    : "0.5rem"
+                ),
                 fontFamily: "Biotif Mid, sans-serif",
                 cursor: "pointer",
+                textAlign: "center",
               }}
             >
               File Sharing System
@@ -145,14 +161,21 @@ export default function Projects() {
                 );
               }}
               style={{
-                fontSize:
+                fontSize: isMobileOrTablet ? (hoveredGridItem === 2
+                  ? "1.5rem"
+                  : hoveredGridItem === null
+                  ? "1rem"
+                  : "0.2rem"
+                ) : (
                   hoveredGridItem === 2
                     ? "3.5rem"
                     : hoveredGridItem === null
                     ? "1.5rem"
-                    : "0.5rem",
+                    : "0.5rem"
+                ),
                 fontFamily: "Biotif Mid, sans-serif",
                 cursor: "pointer",
+                textAlign: "center",
               }}
             >
               Ecommerce
@@ -171,14 +194,21 @@ export default function Projects() {
                 );
               }}
               style={{
-                fontSize:
+                fontSize: isMobileOrTablet ? (hoveredGridItem === 3
+                  ? "1.5rem"
+                  : hoveredGridItem === null
+                  ? "1rem"
+                  : "0.2rem"
+                ) : (
                   hoveredGridItem === 3
                     ? "3.5rem"
                     : hoveredGridItem === null
                     ? "1.5rem"
-                    : "0.5rem",
+                    : "0.5rem"
+                ),
                 fontFamily: "Biotif Mid, sans-serif",
                 cursor: "pointer",
+                textAlign: "center",
               }}
             >
               Gemini Discord Bot

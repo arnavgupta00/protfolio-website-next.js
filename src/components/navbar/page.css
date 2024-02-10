@@ -56,3 +56,32 @@
     background: var(--main-color);
     box-shadow: 5px 5px 5px rgb(171, 170, 170), -5px -5px 5px rgb(233, 232, 232);
 }
+
+@media screen and (max-width :768px) {
+    .navbar{
+        width: 100vw;
+      
+        height: 50px;
+    }
+    .navbarLeftBox{
+        width: 0%;
+        visibility: collapse;;
+ 
+    }
+    .navbarRightBox{
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+    .button {
+        background: transparent;
+        color: var(--main-color);
+        padding: 7px 14px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    
+        
+    }
+}
