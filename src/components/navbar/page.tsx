@@ -52,7 +52,7 @@ export default function Navbar() {
       ) : (
         <div className="navbar">
           <div className="navbarLeftBox">
-            <h1>Arnav Gupta</h1>
+            <h1 onClick={() => window.location.reload()}>AG</h1>
           </div>
           <div className="navbarRightBox">
             <button className="button" onClick={scrollToProjects}>
