@@ -34,8 +34,7 @@ export default function About() {
         <div
           className="aboutMainTile"
           style={{
-            position: "absolute",
-            zIndex: "-1",
+            
             marginLeft: isMobileOrTablet
               ? scrollPosition > 35
                 ? `${-200 + scrollPosition * 2.5}%`

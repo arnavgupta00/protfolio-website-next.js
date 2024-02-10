@@ -1,5 +1,5 @@
 .aboutMain {
-  width: 97vw;
+  max-width: 90vw;
   height: 100vh;
   padding-top: 100px;
 }
@@ -103,7 +103,7 @@
     font-size: 2rem;
     font-family: "Biotif Mid", sans-serif;
     color: var(--main-color);
-    width: 90vw;
+    max-width: 90vw;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
