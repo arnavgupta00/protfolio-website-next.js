@@ -29,7 +29,7 @@ export default function About() {
   }, []);
 
   return (
-    <div ref={aboutRef}>
+    <div ref={aboutRef} style={{paddingBottom:"150px"}}>
       <div className="aboutMain">
         <div
           className="aboutMainTile"

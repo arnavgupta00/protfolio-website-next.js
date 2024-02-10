@@ -103,10 +103,20 @@
     font-size: 2rem;
     font-family: "Biotif Mid", sans-serif;
     color: var(--main-color);
-    width: 190%;
+    width: 90vw;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+  }
+  .design-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 0px;
+    
+    
   }
 
 }
