@@ -6,7 +6,7 @@
 
 
 .aboutMainTile {
-  margin-top: -300px;
+  margin-top: -150px;
   font-size: 7rem;
   font-family: "Biotif Mid", sans-serif;
   color: var(--main-color);
@@ -14,6 +14,8 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
+  
+  
 }
 
 
@@ -24,7 +26,7 @@
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  
+  margin-top: 140px;
   
   
 }
