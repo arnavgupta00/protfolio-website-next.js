@@ -12,7 +12,7 @@
   font-size: 7rem;
   font-family: "Biotif Mid", sans-serif;
   color: var(--main-color);
-  width: 90%;
+  width: 190%;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -105,7 +105,7 @@
     font-size: 2rem;
     font-family: "Biotif Mid", sans-serif;
     color: var(--main-color);
-    max-width: 90vw;
+    width: 90%;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
