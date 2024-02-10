@@ -11,6 +11,14 @@ export default function Home() {
       <FirstPage></FirstPage>
       <Projects></Projects>
       <About></About>
+      <style jsx global>{`
+        @media (max-width: 768px) {
+          html,
+          body {
+            overflow-x: hidden;
+          }
+        }
+      `}</style>
     </main>
   );
 }
