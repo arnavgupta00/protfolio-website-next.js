@@ -3,9 +3,17 @@
 import "@/components/about/page.css";
 import { useState, useRef, useEffect } from "react";
 import { aboutRefAdd } from "@/components/refManagements";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
+
+
+
 export default function About() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const aboutRef = useRef<HTMLDivElement>(null);
+  const isMobileOrTablet = useMediaQuery("(max-width: 767px)");
+
+
   useEffect(() => {
     aboutRefAdd(aboutRef);
     const handleScroll = () => {
@@ -23,6 +31,7 @@ export default function About() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div ref={aboutRef}>
       <div className="aboutMain">
@@ -31,8 +40,8 @@ export default function About() {
           style={{
             position: "absolute",
             zIndex: "-1",
-            marginLeft:
-              scrollPosition > 35 ? `${-200 + scrollPosition * 2}%` : "-200%",
+            marginLeft: isMobileOrTablet ? (scrollPosition > 35 ? `${-200 + scrollPosition * 3}%` : "-200%") : (scrollPosition > 35 ? `${-200 + scrollPosition * 2}%` : "-200%"),
+              
           }}
         >
           <h1>About me</h1>

@@ -1,6 +1,7 @@
 html{
   background-color: rgb(224,224,224);
   overflow-x: hidden;
+  max-width: 100vw;
 }
 :root {
   --main-color: #09252ec7;
