@@ -29,7 +29,7 @@ export default function About() {
   }, []);
 
   return (
-    <div ref={aboutRef} style={{paddingBottom:"150px"}}>
+    <div ref={aboutRef} style={{paddingBottom:"150px" , display:"flex", justifyContent:"center", alignItems:"center"}}>
       <div className="aboutMain">
         <div
           className="aboutMainTile"
@@ -56,7 +56,7 @@ export default function About() {
               </div>
               <div
                 className="timeline-component timeline-content"
-                style={{ padding: "30px" }}
+                style={{ padding: "30px",borderRadius: "25px", }}
               >
                 <h3>Education</h3>
                 <p style={{ fontFamily: "verdana", marginTop: "10px" }}>
@@ -66,7 +66,7 @@ export default function About() {
               </div>
               <div
                 className="timeline-component timeline-content"
-                style={{ padding: "30px", paddingLeft: "40px" }}
+                style={{ padding: "30px", paddingLeft: "40px"  , borderRadius: "25px"}}
               >
                 <h3>Tech Stack</h3>
                 <p style={{ fontFamily: "verdana", marginTop: "10px" }}>
@@ -95,7 +95,7 @@ export default function About() {
               </div>
               <div
                 className="timeline-component timeline-content"
-                style={{ padding: "30px", paddingLeft: "40px" }}
+                style={{ padding: "30px", paddingLeft: "40px" , borderRadius: "25px" }}
               >
                 <h3>Personality </h3>
                 <p  style={{ fontFamily: "verdana", marginTop: "10px" }}>
